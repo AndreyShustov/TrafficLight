@@ -29,12 +29,9 @@ class ViewController: UIViewController {
      
         
     @IBAction func startButtonPressed(_ sender: UIButton) {
-
-    startButton.setTitle("NEXT", for: .normal)
-
-        redLightView.alpha = 1
-        yellowLightView.alpha = 1
-        greenLightView.alpha = 1
+        
+        startButton.setTitle("NEXT", for: .normal)
+        
         
         sender.tag += 1
         if sender.tag > 2 { sender.tag = 0 }
